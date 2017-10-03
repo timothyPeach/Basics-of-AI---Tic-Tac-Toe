@@ -68,7 +68,7 @@ _ O _
 
 X X O
 
-_ _ _
+_ _ _.
 
 O hasn't played too well... On O's first move, he didn't go in the corner, and now X can either go in the upper left square,
 or the lower left square, and create a situation where TWO WINS are possible!
@@ -89,7 +89,7 @@ X O _
 
 X X O
 
-_ _ _
+_ _ _.
 
 An identically terrible situation for O, but with one important difference!
 
