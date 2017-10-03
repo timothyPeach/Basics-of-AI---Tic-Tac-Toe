@@ -49,10 +49,15 @@ The bot will try all moves and find that moving in the Center is the best, with 
 Here are some of the other scorings:
 
 X O _ (scored as 0 because no one can win in this lane)
+
 X O O (also scored as 0 for same reason)
+
 X X _ (scored as 10 because we're 1 away from winning!)
+
 O O _ (scored as -10 because we're 1 move away from losing!)
+
 X X X (scored as 1000 or something like this because we win.)
+
 O O O (-1000, same idea, we want to avoid this at all costs.)
 
 An interesting thing that the bot does.
@@ -60,7 +65,9 @@ An interesting thing that the bot does.
 Consider the following board state where it is X to move:
 
 _ O _
+
 X X O
+
 _ _ _
 
 O hasn't played too well... On O's first move, he didn't go in the corner, and now X can either go in the upper left square,
@@ -69,7 +76,9 @@ or the lower left square, and create a situation where TWO WINS are possible!
 Let's look at both of those so it's more clear:
 
 _ O _
+
 X X O
+
 X _ _
 
 What is O supposed to do here?  If O blocks the upper left spot, X just wins by going in the upper right spot! The game is over!
@@ -77,7 +86,9 @@ What is O supposed to do here?  If O blocks the upper left spot, X just wins by 
 Here's the other way X can win:
 
 X O _
+
 X X O
+
 _ _ _
 
 An identically terrible situation for O, but with one important difference!
